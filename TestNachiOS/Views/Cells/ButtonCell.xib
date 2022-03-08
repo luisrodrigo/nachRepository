@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonCell" rowHeight="72" id="7lx-Eo-8R0" customClass="ButtonCell" customModule="TestNachiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7lx-Eo-8R0" id="pef-ec-vrZ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guu-AQ-lvh">
+                        <rect key="frame" x="59" y="21" width="295" height="30"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="295" id="T48-RY-FgK"/>
+                        </constraints>
+                        <state key="normal" title="Enviar">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Guu-AQ-lvh" secondAttribute="bottom" constant="21" id="AFR-4B-JcK"/>
+                    <constraint firstItem="Guu-AQ-lvh" firstAttribute="leading" secondItem="pef-ec-vrZ" secondAttribute="leading" constant="59" id="VEN-QL-HVM"/>
+                    <constraint firstAttribute="trailing" secondItem="Guu-AQ-lvh" secondAttribute="trailing" constant="60" id="odG-Wd-KB8"/>
+                    <constraint firstItem="Guu-AQ-lvh" firstAttribute="top" secondItem="pef-ec-vrZ" secondAttribute="top" constant="21" id="vy4-BU-HjK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="sendButton" destination="Guu-AQ-lvh" id="rjI-Wo-AXL"/>
+            </connections>
+            <point key="canvasLocation" x="-65.217391304347828" y="78.348214285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
